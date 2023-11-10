@@ -1,6 +1,7 @@
 import rambleman from './ramble-man.png';
 import './App.css';
 import styled from 'styled-components';
+import { useState } from 'react';
 
 const StravaButton = styled.a`
 
@@ -46,12 +47,24 @@ const SignupForm = styled.form`
     font-size: 24px;
     margin-bottom: .5rem;
   }
-  p {
+  .helper-text {
     font-size: .75rem;
+  }
+  .thanks-text {
+    margin-bottom: 0;
   }
 `;
 
 function App() {
+
+  const [showFormSuccess, setShowFormSuccess] = useState(false);
+
+  const formSubmit = (e) => {
+    e.preventDefault();
+    console.log("submitted dat boi");
+    setShowFormSuccess(true);
+  }
+
   return (
     <div className="container">
       <div className="image-wrapper">
@@ -64,12 +77,18 @@ function App() {
           <StravaButton href="https://www.strava.com/clubs/ramblekzoo">Join Strava Club</StravaButton>
         </div>
 
-        <SignupForm name="signup" netlify>
-          <label for="email">Sign up for email alerts</label>
-          <input type="hidden" name="form-name" value="signup" />
-          <input type="email" name="email" placeholder="Email"/>
-          <p><i>* I'm just one guy in Kalamazoo, this is a secure form. Your email will only be added to a private mailing list, and will not be shared.</i></p>
-          <button type="submit">Send</button>
+        <SignupForm name="signup" onSubmit={e => formSubmit(e)}>
+          <label htmlFor="email">Sign up for email alerts</label>
+          
+          { showFormSuccess ? <>
+              <p className="thanks-text">Thanks for signing up! I'll reach out via email when there are more details to share</p>
+            </> : <>
+              <input type="hidden" name="form-name" value="signup" />
+              <input type="email" name="email" placeholder="Email"/>
+              <p className="helper-text"><i>* I'm just one guy in Kalamazoo, this is a secure form. Your email will only be added to a private mailing list, and will not be shared.</i></p>
+              <button type="submit">Send</button> 
+            </>
+          }
         </SignupForm>
 
         <h2>What is this?</h2>
