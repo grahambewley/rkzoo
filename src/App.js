@@ -28,7 +28,7 @@ const StravaButton = styled.a`
   }
 `;
 
-const SignupForm = styled.form`
+const FormWrapper = styled.div`
   background: #f9f6f2;
   padding: 1rem;
   margin: 4rem 0;
@@ -78,19 +78,22 @@ function App() {
           <StravaButton href="https://www.strava.com/clubs/ramblekzoo">Join Strava Club</StravaButton>
         </div>
 
-        <SignupForm name="signup" onSubmit={e => formSubmit(e)}>
-          <label htmlFor="email">Sign up for email alerts</label>
-          
-          { showFormSuccess ? <>
-              <p className="thanks-text">Thanks for signing up! I'll reach out via email when there are more details to share</p>
-            </> : <>
-              <input type="hidden" name="form-name" value="signup" />
-              <input type="email" name="email" placeholder="Email"/>
-              <p className="helper-text"><i>* I'm just one guy in Kalamazoo, this is a secure form. Your email will only be added to a private mailing list, and will not be shared.</i></p>
-              <button type="submit">Send</button> 
-            </>
-          }
-        </SignupForm>
+        <FormWrapper>
+          <form name="signup" onSubmit={e => formSubmit(e)}>
+            <input type="hidden" name="form-name" value="signup" />
+            <label htmlFor="email">Sign up for email alerts</label>
+            
+            { showFormSuccess ? <>
+                <p className="thanks-text">Thanks for signing up! I'll reach out via email when there are more details to share</p>
+              </> : <>
+                
+                <input type="email" name="email" placeholder="Email"/>
+                <p className="helper-text"><i>* I'm just one guy in Kalamazoo, and this is a secure form. Your email address will be added to a private mailing list, and will not be shared.</i></p>
+                <button type="submit">Send</button> 
+              </>
+            }
+          </form>
+        </FormWrapper>
 
         <h2>What is this?</h2>
         <p><i>The Ramble</i> is a group bike ride kicking off in Kalamazoo in the <strong>Spring of 2024</strong>.</p>
