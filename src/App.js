@@ -1,5 +1,4 @@
 import rambleman from './ramble-man.png';
-import featherone from './feather1.png';
 import feathertwo from './feather2.png';
 import './App.css';
 import styled from 'styled-components';
