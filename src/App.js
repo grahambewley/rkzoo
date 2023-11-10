@@ -41,12 +41,24 @@ function App() {
           <StravaButton href="https://www.strava.com/clubs/ramblekzoo">Join Strava Club</StravaButton>
         </div>
         <h2>What is this?</h2>
-
-        <p>Hi, I'm <a href="https://www.instagram.com/graham.bewley">Graham</a> 👋</p>
-        <p>The Ramble is a new group bike ride that I'm organizing, kicking off in <strong>Spring of 2024</strong>.</p>
-        <p>We won't be smashing PRs, shredding singletrack, or really getting anywhere too fast. Each week will be a bit different, but routes will typically be 15-20 miles in length, getting off the beaten path and exploring unique terrain whenever possible.</p>
-        <p>If you're interested in coming along, join The Ramble Strava club or <a href="https://www.instagram.com/graham.bewley">follow me on Instagram</a>. More details will be shared as the season of warmth approaches and routes are finalized. Looking forward to rambling with you!</p>
+        <p><i>The Ramble</i> is a new group bike ride kicking off in Kalamazoo in the <strong>Spring of 2024</strong>.</p>
         
+        <h2>What kind of ride?</h2>
+        <p>At it's core, this is just a bike ride with some friends you haven't met yet.</p>
+        <p>We won't be smashing PRs, shredding singletrack, or really getting anywhere too fast. Each week will be a bit different, but routes will typically be 15-20 miles in length, getting off the beaten path and exploring unique terrain whenever possible.</p>
+
+        <h2>What sort of bike do I need?</h2>
+        <p>The spirit of <i>The Ramble</i> is that there are no real rules. If your bike can carry you the distance of the ride, and you enjoy riding it, you're on the right bike. We like steel frames, old mountain bikes, dusty garage klunkers, whatever.</p>
+        <p>For context, I'll be riding a steel gravel/touring bike, but might switch to my 90's Hardrock basket bike from time to time. Baskets are cool.</p>
+        <p>Finally, I'm definitely not a <i>lycra</i> guy, and is definitely not a <i>lycra</i> type of ride. Come as you are.</p>
+
+        <h2>How do I get involved?</h2>
+        <p>If you're on Strava, hit the button above to join <a href="https://www.strava.com/clubs/ramblekzoo">The Ramble Strava club</a>. Events will be created and routes will be shared here.</p>
+
+        <h2>Whose idea was this?</h2>
+        <p>👋 Hi I'm Graham, I'm a metro Detroit native, but have called Kalamazoo home for the last 3 years. <i>The Ramble</i> represents the sort of rides that I most enjoy going on with friends back home</p>
+        <p>If you'd like, you can <a href="https://www.instagram.com/graham.bewley">follow me on Instagram</a>, where I'll be sharing more details as the season of warmth approaches and routes are finalized.</p>
+        <p>Looking forward to rambling with you!</p>
       </div>
     </div>
   );
