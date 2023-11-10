@@ -3,11 +3,13 @@
 }
 * {
   margin: 0;
+  font-family: 'Barlow', sans-serif;
+  color: #121212;
 }
 
 p {
   font-size: 18px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
 }
 
 a {
@@ -16,6 +18,11 @@ a {
 
 h1, h2, h3 {
   font-family: 'Permanent Marker', cursive;
+  margin: .25rem 0;
+  color: #222;
+}
+h2 {
+  font-size: 1.75rem;
 }
 
 input, label {
@@ -23,7 +30,7 @@ input, label {
 }
 
 button {
-  background: #FC4C02;
+  background: #bb4d00;
   color: white;
   border-radius: 3px;
   text-transform: uppercase;
@@ -61,10 +68,17 @@ button:hover {
 }
 
 .content-wrapper {
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 
 .button-wrapper {
   display: flex;
   justify-content: center;
+}
+
+.feather-image {
+  width: 7rem;
+  margin: 4rem auto;
+  display: block;
+  /* transform: rotate(90deg); */
 }
