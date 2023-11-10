@@ -1,12 +1,48 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
 p {
   font-size: 18px;
+  margin-bottom: 1rem;
 }
+
 a {
   color: #28AFB0;
 }
 
 h1, h2, h3 {
   font-family: 'Permanent Marker', cursive;
+}
+
+input, label {
+  display:block;
+}
+
+button {
+  background: #FC4C02;
+  color: white;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding: .75rem 1.5rem;
+  transition: all 200ms ease-in-out;
+  border: none;
+}
+button:hover {
+  filter: brightness(0.85);
+}
+@media(max-width: 1200px) {
+  button {
+    width: 100%;
+  }
 }
 
 .container {
@@ -17,7 +53,7 @@ h1, h2, h3 {
 }
 
 .image-wrapper {
-  padding: 24px;
+  padding: 24px 8px;
 }
 .ramble-man {
   position: relative;

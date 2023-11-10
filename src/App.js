@@ -26,6 +26,31 @@ const StravaButton = styled.a`
   }
 `;
 
+const SignupForm = styled.form`
+  background: #f9f6f2;
+  padding: 1rem;
+  margin: 4rem 0;
+  position: relative;
+
+  label {
+    margin-bottom: 6px;
+    margin-left: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .8rem;
+    color: #666;
+  }
+  input {
+    padding: .5rem;
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: .5rem;
+  }
+  p {
+    font-size: .75rem;
+  }
+`;
+
 function App() {
   return (
     <div className="container">
@@ -33,13 +58,19 @@ function App() {
         <img src={rambleman} className="ramble-man" alt="logo" />
       </div>
 
-      
-
       <div className="content-wrapper">
         
         <div className="button-wrapper">
           <StravaButton href="https://www.strava.com/clubs/ramblekzoo">Join Strava Club</StravaButton>
         </div>
+
+        <SignupForm name="signup" netlify>
+          <label for="email">Sign up for email alerts</label>
+          <input type="email" name="email" placeholder="Email"/>
+          <p><i>* I'm just one guy in Kalamazoo, this is a secure form. Your email will only be added to a private mailing list, and will not be shared.</i></p>
+          <button type="submit">Send</button>
+        </SignupForm>
+
         <h2>What is this?</h2>
         <p><i>The Ramble</i> is a new group bike ride kicking off in Kalamazoo in the <strong>Spring of 2024</strong>.</p>
         
