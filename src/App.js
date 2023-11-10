@@ -85,6 +85,7 @@ function App() {
 
         <h2>How do I get involved?</h2>
         <p>If you're on Strava, hit the button above to join <a href="https://www.strava.com/clubs/ramblekzoo">The Ramble Strava club</a>. Events will be created and routes will be shared here.</p>
+        <p>Otherwise, you can add your email to the mailing list by submitting the form above. When events are created and routes are shared, I'll be sure to send them out via email as well.</p>
 
         <h2>Whose idea was this?</h2>
         <p>👋 Hi I'm Graham, I'm a metro Detroit native, but have called Kalamazoo home for the last 3 years. <i>The Ramble</i> represents the sort of rides that I most enjoy going on with friends back home</p>
