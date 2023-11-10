@@ -66,6 +66,7 @@ function App() {
 
         <SignupForm name="signup" netlify>
           <label for="email">Sign up for email alerts</label>
+          <input type="hidden" name="form-name" value="signup" />
           <input type="email" name="email" placeholder="Email"/>
           <p><i>* I'm just one guy in Kalamazoo, this is a secure form. Your email will only be added to a private mailing list, and will not be shared.</i></p>
           <button type="submit">Send</button>
