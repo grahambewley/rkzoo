@@ -79,7 +79,7 @@ function App() {
         </div>
 
         <FormWrapper>
-          <form name="signup">
+          <form data-netlify="true" name="signup">
             <input type="hidden" name="form-name" value="signup" />
             <label htmlFor="email">Sign up for email alerts</label>
             
