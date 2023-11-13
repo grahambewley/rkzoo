@@ -79,7 +79,7 @@ function App() {
         </div>
 
         <FormWrapper>
-          <form name="signup" onSubmit={e => formSubmit(e)}>
+          <form name="signup">
             <input type="hidden" name="form-name" value="signup" />
             <label htmlFor="email">Sign up for email alerts</label>
             
