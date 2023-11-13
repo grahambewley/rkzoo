@@ -58,13 +58,13 @@ const FormWrapper = styled.div`
 
 function App() {
 
-  const [showFormSuccess, setShowFormSuccess] = useState(false);
+  const [showFormSuccess] = useState(false);
 
-  const formSubmit = (e) => {
-    e.preventDefault();
-    console.log("submitted dat boi");
-    setShowFormSuccess(true);
-  }
+  // const formSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log("submitted dat boi");
+  //   setShowFormSuccess(true);
+  // }
 
   return (
     <div className="container">
